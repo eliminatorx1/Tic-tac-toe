@@ -121,9 +121,9 @@ reset.addEventListener('click', ()=>{
         [2, 4, 6, 5, 15, 135],
     ]
     wins.forEach(e=>{
-        boxtexts[e[0]].parentNode.style.backgroundColor = "transparent";
-        boxtexts[e[1]].parentNode.style.background = "transparent";
-        boxtexts[e[2]].parentNode.style.background = "transparent";
+        boxtexts[e[0]].parentNode.style.backgroundColor = "white";
+        boxtexts[e[1]].parentNode.style.background = "white";
+        boxtexts[e[2]].parentNode.style.background = "white";
     
     });
     document.getElementsByClassName("info")[0].innerText = "Turn for "+ turn;
