@@ -59,6 +59,7 @@ nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background: transparent; */
    background-color: white;
     z-index: 400;
     transition: all 0.5s ease-in-out;
@@ -107,7 +108,7 @@ nav ul{
     border:none;
     border-radius: 5px;
     cursor: pointer;
-    background:rgb(232, 119, 119);
+    background:rgb(54, 200, 5);
     color: white;
  
     font-size: 23px;

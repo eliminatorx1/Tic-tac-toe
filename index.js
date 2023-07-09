@@ -6,20 +6,25 @@ let isgameover = false;
 
 //initial variable
 let turn = "X";
+let count = 0;
 document.getElementsByClassName("info")[0].innerText = "Turn for" +" "+ turn;
 
 //function to change the turn
 
 const changeTurn = () =>{
+   
     return turn== "X"? "0": "X";
+    
 
 }
 
 //Function to check for a win
 
+
 const checkWin = () =>{
     //we will write all the possibilities of win here
     let boxtexts = document.getElementsByClassName("boxtext");
+    
     
 
     let wins = [
@@ -47,10 +52,12 @@ const checkWin = () =>{
             document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = '200px';    
             // document.querySelector('.line').style.width = "20vw";
             // document.querySelector('.line').style.transform = `translate(${e[3]}vw, ${e[4]}vw) rotate(${e[5]}deg)`;
-
             
          
         }
+        
+        
+        
             
 
     })
@@ -73,12 +80,14 @@ Array.from(boxes).forEach(element =>{
     
                 audioTurn.play();//this will play the audio
                 turn = changeTurn();
+                count = count+1;
                 
                 checkWin();
                 if(!isgameover){
                     document.getElementsByClassName("info")[0].innerText = "Turn for" +" "+ turn;
     
                 }
+                
                 
             }
 
