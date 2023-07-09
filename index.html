@@ -9,6 +9,21 @@
     <script src="index2.js" defer></script>
     <script src="particles.js" defer></script>
     <script src="app.js" defer></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Add this CSS for the footer */
+        footer {
+            margin-top: auto;
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,10 +32,8 @@
             <li>Tic Tac Game</li>
         </ul>
     </nav>
-    <!-- <div id="particles-js"> -->
     <section id="particles-js">
         <div class="gameContainer">
-
             <div class="container">
                 <!-- <div class="line"></div> -->
                 <div class="box bt-0 bl-0"><span class="boxtext"></span></div>
@@ -36,7 +49,7 @@
             <div class="gameInfo">
                 <h1> Welcome to my game</h1>
                 <h3>the game starts by just Tap on box</h3>
-                <h3>first player starts as  <span style="color:red">player X</span> and second player as<span style="color:green">Player 0</span></h3>
+                <h3>first player starts as <span style="color:red">player X</span> and second player as <span style="color:green">Player 0</span></h3>
                 <div>
                     <span class="info"></span>
                     <button id="reset">reset</button>
@@ -45,23 +58,12 @@
                     <img src="excited.gif">
                 </div>
             </div>
-
-
         </div>
-        
-
     </section>
-   
-        
 
-
-
-
-
-
-
-    <!-- </div> -->
-
+    <footer>
+        <p>All rights reserved &copy; Sandeep Singh</p>
+    </footer>
 </body>
 
 </html>
